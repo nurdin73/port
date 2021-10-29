@@ -1,0 +1,29 @@
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+.font-dancing {
+    font-family: 'Dancing Script', cursive;
+}
+
+.progress {
+    box-sizing: content-box;
+    height: 5px; /* Can be anything */
+    position: relative;
+    background-color: rgba(17, 24, 39, .5);    
+}
+
+.progress > span {
+    display: block;
+    height: 100%;
+    background-color: rgba(245, 158, 11, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+.progress::after {
+    content: '';
+    background-color: rgba(254, 242, 242, 1);
+    width: 100px;
+    z-index: 1;
+    height: 2px;
+}
