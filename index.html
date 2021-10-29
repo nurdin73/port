@@ -27,6 +27,9 @@
         .container {
             @apply xl:w-[1200px] lg:w-[900px] md:w-[700px] sm:w-[600px] w-[330px] mx-auto;
         }
+        .btn {
+            @apply bg-yellow-500 py-2 px-4 mt-3 w-44 hover:bg-opacity-70;
+        }
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -40,20 +43,20 @@
             </button>
             <span class="font-playfair ml-2 text-white text-xl font-bold tracking-wide">Nurdin</span>
             <ul class="items-center space-x-5 hidden sm:flex">
-                <li class="text-white font-playfair hover:text-gray-400 transition duration-100"><a href="#">Beranda</a></li>
-                <li class="text-white font-playfair hover:text-gray-400 transition duration-100"><a href="#">Tentang</a></li>
-                <li class="text-white font-playfair hover:text-gray-400 transition duration-100"><a href="#">Keterampilan</a></li>
-                <li class="text-white font-playfair hover:text-gray-400 transition duration-100"><a href="#">Proyek</a></li>
-                <li class="text-white font-playfair hover:text-gray-400 transition duration-100"><a href="#">Kontak</a></li>
+                <li class="text-white font-playfair hover:text-gray-400 transition duration-100"><a href="#beranda">Beranda</a></li>
+                <li class="text-white font-playfair hover:text-gray-400 transition duration-100"><a href="#tentang">Tentang</a></li>
+                <li class="text-white font-playfair hover:text-gray-400 transition duration-100"><a href="#keterampilan">Keterampilan</a></li>
+                <li class="text-white font-playfair hover:text-gray-400 transition duration-100"><a href="#proyek">Proyek</a></li>
+                <li class="text-white font-playfair hover:text-gray-400 transition duration-100"><a href="#kontak">Kontak</a></li>
             </ul>
 
             <!-- mobile -->
             <ul class="fixed top-0 -left-1/2 bottom-0 w-1/2 bg-gray-800 shadow sm:hidden flex flex-col justify-start items-center transition-all duration-300 ease-in-out" id="list-menu">
-                <li class="text-white font-playfair hover:text-gray-400 transition duration-100 hover:bg-gray-700 hover:text-white w-full p-3 text-lg"><a href="#">Beranda</a></li>
-                <li class="text-white font-playfair hover:text-gray-400 transition duration-100 hover:bg-gray-700 hover:text-white w-full p-3 text-lg"><a href="#">Tentang</a></li>
-                <li class="text-white font-playfair hover:text-gray-400 transition duration-100 hover:bg-gray-700 hover:text-white w-full p-3 text-lg"><a href="#">Keterampilan</a></li>
-                <li class="text-white font-playfair hover:text-gray-400 transition duration-100 hover:bg-gray-700 hover:text-white w-full p-3 text-lg"><a href="#">Proyek</a></li>
-                <li class="text-white font-playfair hover:text-gray-400 transition duration-100 hover:bg-gray-700 hover:text-white w-full p-3 text-lg"><a href="#">Kontak</a></li>
+                <li class="text-white font-playfair hover:text-gray-400 transition duration-100 hover:bg-gray-700 hover:text-white w-full p-3 text-lg"><a href="#beranda">Beranda</a></li>
+                <li class="text-white font-playfair hover:text-gray-400 transition duration-100 hover:bg-gray-700 hover:text-white w-full p-3 text-lg"><a href="#tentang">Tentang</a></li>
+                <li class="text-white font-playfair hover:text-gray-400 transition duration-100 hover:bg-gray-700 hover:text-white w-full p-3 text-lg"><a href="#keterampilan">Keterampilan</a></li>
+                <li class="text-white font-playfair hover:text-gray-400 transition duration-100 hover:bg-gray-700 hover:text-white w-full p-3 text-lg"><a href="#proyek">Proyek</a></li>
+                <li class="text-white font-playfair hover:text-gray-400 transition duration-100 hover:bg-gray-700 hover:text-white w-full p-3 text-lg"><a href="#kontak">Kontak</a></li>
                 <li class="text-white border p-2 rounded-full mt-2" id="btn-close">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -68,21 +71,23 @@
         </nav>
     </div>
     <div class="mb-4">
-        <div class="sm:h-[250px] h-screen container flex items-center mb-3">
+        <div class="h-screen container flex items-center mb-3" id="beranda">
             <div class="flex flex-col space-y-2">
-                <span class="font-bold text-white font-playfair text-3xl">Hallo, Saya</span>
-                <span class="font-playfair text-6xl text-white"><span class="text-yellow-500 font-extrabold">Nurdin</span></span>
-                <span class="text-xl font-playfair text-yellow-500">Web Developer <span class="text-white">Di Telering</span></span>
+                <span class="font-bold text-white font-playfair text-3xl md:text-8xl">Hallo, Saya</span>
+                <span class="font-playfair text-9xl text-white"><span class="text-yellow-500 font-extrabold">Nurdin</span></span>
+                <span class="text-3xl font-playfair text-yellow-500">Web Developer <span class="text-white">Di Telering</span></span>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="tentang">
             <div class="bg-gray-900 bg-opacity-50 p-3">
                 <h5 class="text-center text-2xl text-white font-bold font-playfair">Tentang Saya</h5>
-                <p class="text-white font-playfair mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa eveniet ratione ab quae, possimus similique asperiores totam illum rerum quos ipsam impedit corporis sapiente et, alias aliquam doloremque numquam deleniti earum esse itaque nobis, id ipsa quia. Facilis esse voluptatum vel assumenda nostrum mollitia. Consequatur atque autem ut similique excepturi!</p>
+                <p class="text-white font-playfair mt-2">
+                    Saya lulus dari sekolah kejuruan pada tahun 2019. Saya seorang pengembang fullstack tetapi saya lebih condong ke pengembang front end. Saya memiliki tujuan yaitu membuat aplikasi yang berguna untuk semua orang
+                </p>
             </div>
         </div>
 
-        <div class="container mt-3">
+        <div class="container mt-3" id="keterampilan">
             <div class="bg-gray-900 bg-opacity-50 p-3">
                 <h5 class="text-center text-2xl text-white font-bold font-playfair">Keterampilan</h5>
                 <div class="grid grid-cols-2 gap-4">
@@ -146,7 +151,7 @@
             </div>
         </div>
     
-        <div class="container mt-3">
+        <div class="container mt-3" id="proyek">
             <h5 class="text-center text-2xl text-white font-bold font-playfair">Proyek</h5>
             <div class="grid sm:grid-cols-4 grid-cols-2 gap-4 mt-3">
                 <div class="bg-gray-900 bg-opacity-50">
@@ -189,14 +194,39 @@
         </div>
     </div>
 
-    <div class="container mt-3">
+    <div class="container mt-3" id="kontak">
         <div class="bg-gray-900 bg-opacity-50 p-3">
             <h5 class="text-center text-2xl text-white font-bold font-playfair">Kontak</h5>
             <div class="grid grid-cols-2 gap-4">
-                
+                <div class="sm:flex justify-center hidden items-center">
+                    <div class="aspect-2-16 aspect-h-8 w-3/4 -rotate-12">
+                        <img src="./img1.svg" alt="gambar" class="object-cover">
+                    </div>
+                </div>
+                <form action="mailto:nurdin.reverse73@gmail.com" method="post">
+                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-4">
+                        <div class="flex flex-col space-y-2">
+                            <label for="" class="text-white font-playfair">Nama</label>
+                            <input type="text" name="Nama" id="Nama" placeholder="Masukkan nama" class="outline-none bg-gray-900 border-0 text-white placeholder-white::placeholder">
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <label for="" class="text-white font-playfair">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Masukkan email" class="outline-none bg-gray-900 border-0 text-white placeholder-white::placeholder">
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label for="" class="text-white font-playfair">Pesan</label>
+                        <textarea class="outline-none bg-gray-900 border-0 text-white placeholder-white::placeholder" placeholder="Masukkan pesan" name="pesan" id="pesan" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="btn" type="submit">Kirim</button>
+                </form>
             </div>
         </div>
     </div>
+
+    <footer class="bg-gray-900 bg-opacity-50 flex justify-center items-center h-12 border-t mt-3">
+        <span class="text-white">CopyRight &copy; 2021</span>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
