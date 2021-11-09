@@ -34,6 +34,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="hidden justify-center items-center flex-col z-50  w-screen h-screen fixed bg-gray-900 bg-opacity-50" id="wrapper-modal" data-hidden="true">
+        <div class="w-1/2 bg-gray-900 shadow p-3 rounded w-100 h-100 position-static">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-white font-playfair">Detail</span>
+                <button class="text-white" id="close-modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="aspect-w-16 aspect-h-9">
+                <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80" alt="${result.title}" class="object-cover" id="img-project">
+            </div>
+            <div class="flex flex-col mt-3">
+                <div class="flex items-center space-x-2 flex-wrap space-y-2" id="list-stack">
+                    <span class="bg-yellow-500 px-2 py-0 rounded text-sm">asda</span>
+                    <span class="bg-yellow-500 px-2 py-0 rounded text-sm">asda</span>
+                    <span class="bg-yellow-500 px-2 py-0 rounded text-sm">asda</span>
+                </div>
+                <span class="text-white font-bold font-playfair text-md" role="button" id="title-project">${result.title}</span>
+                <span class="text-sn font-playfair text-white text-justify text-desc" id="desc-project">${result.desc}</span>
+            </div>
+            <h5 class="text-white text-lg font-bold font-playfair">Demo</h5>
+            <ul class="unstyled" id="list-demo">
+                
+            </ul>
+        </div>
+    </div>
     <div class="border-b border-gray-700">
         <nav class="container sm:h-14 h-20 flex items-center justify-between">
             <button id="btn-burger" class="sm:hidden inline-block border p-2 text-white rounded">
@@ -153,43 +181,8 @@
     
         <div class="container mt-3" id="proyek">
             <h5 class="text-center text-2xl text-white font-bold font-playfair">Proyek</h5>
-            <div class="grid sm:grid-cols-4 grid-cols-2 gap-4 mt-3">
-                <div class="bg-gray-900 bg-opacity-50">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80" alt="imgae" class="object-cover">
-                    </div>
-                    <div class="flex flex-col p-2">
-                        <span class="text-white font-playfair text-sm" role="button">Lorem, ipsum dolor.</span>
-                        <span class="text-xs font-dancing text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sapiente.</span>
-                    </div>
-                </div>
-                <div class="bg-gray-900 bg-opacity-50">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80" alt="imgae" class="object-cover">
-                    </div>
-                    <div class="flex flex-col p-2">
-                        <span class="text-white font-playfair text-sm" role="button">Lorem, ipsum dolor.</span>
-                        <span class="text-xs font-dancing text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sapiente.</span>
-                    </div>
-                </div>
-                <div class="bg-gray-900 bg-opacity-50">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80" alt="imgae" class="object-cover">
-                    </div>
-                    <div class="flex flex-col p-2">
-                        <span class="text-white font-playfair text-sm" role="button">Lorem, ipsum dolor.</span>
-                        <span class="text-xs font-dancing text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sapiente.</span>
-                    </div>
-                </div>
-                <div class="bg-gray-900 bg-opacity-50">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80" alt="imgae" class="object-cover">
-                    </div>
-                    <div class="flex flex-col p-2">
-                        <span class="text-white font-playfair text-sm" role="button">Lorem, ipsum dolor.</span>
-                        <span class="text-xs font-dancing text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sapiente.</span>
-                    </div>
-                </div>
+            <div class="grid sm:grid-cols-4 grid-cols-2 gap-4 mt-3" id="listProject">
+                
             </div>
         </div>
     </div>
@@ -223,6 +216,8 @@
             </div>
         </div>
     </div>
+
+    
 
     <footer class="bg-gray-900 bg-opacity-50 flex justify-center items-center h-12 border-t mt-3">
         <span class="text-white">CopyRight &copy; 2021</span>
