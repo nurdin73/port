@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Dumbtick web app",
         "desc": "Dumbtick adalah sebuah website untuk event management yang dibuat dengan stack teknologi React JS sebagai Frontend. dan express js untuk api nya",
-        "photo": "https://i.ibb.co/qJNZS7J/Screenshot-from-2021-11-09-10-08-01.png",
+        "photo": "project/1.png",
         "demo": ["http://bit.ly/DumbTickWebApp"],
         "stack": ["React JS", "Sequelize ORM", "Mysql", "Material UI", "Redux", "Express JS"]
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "title": "Dumbtick mobile app",
         "desc":"Dumbtick adalah sebuah website untuk event management yang dibuat dengan stack teknologi react native",
-        "photo": "https://i.ibb.co/QN0qwRR/Screenshot-from-2021-11-09-10-10-01.png",
+        "photo": "project/2.png",
         "demo": ["http://bit.ly/DumbTickMobileApp"],
         "stack": ["React Native", "Redux"]
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "title": "Medium Clone",
         "desc": "clonning website medium. dimana yg diambil hanya bisa tambah artikel, baca artikel oleh semua orang",
-        "photo": "https://i.ibb.co/31tPryD/Screenshot-from-2021-11-09-10-13-19.png",
+        "photo": "project/3.png",
         "demo": ["http://bit.ly/cloneMedium", "http://bit.ly/cloneMediumBackend"],
         "stack": ["React JS", "Sequelize ORM", "Mysql", "Material UI", "Redux", "Express JS"]
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "title": "Aplikasi Export dan import nota penjualan",
         "desc": "Membuat aplikasi untuk mempermudah proses print data penjualan tanpa harus menambahkan 1 per satu. aplikasi ini dibuat menggunakan laravel dan bootstrap versi 4",
-        "photo": "https://i.ibb.co/9nscNg3/Screenshot-from-2021-11-09-10-16-55.png",
+        "photo": "project/4.png",
         "demo": ["http://boiling-plateau-63975.herokuapp.com/"],
         "stack": ["Laravel", "Bootstrap 4", "Laravel Excel"]
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "title": "Point Of Sale",
         "desc": "Aplikasi POS yang digunakan untuk management barang, serta meghitung proses transaksi lebih mudah",
-        "photo": "https://i.ibb.co/cwnFHp7/Screenshot-from-2021-11-09-10-20-38.png",
+        "photo": "project/5.png",
         "demo": ["https://pos.nurdindev.com"],
         "stack": ["Laravel", "Jquery", "Laravel Excel", "Bootstrap 4"]
     },
@@ -43,7 +43,7 @@
         "id": 6,
         "title": "Movie rating web app",
         "desc": "aplikasi untuk melihat rating sebuat film maupun pemain film yang datanya dapat dari TMDB API.",
-        "photo": "https://i.ibb.co/LQ28wBj/nextjs-movies-xi-vercel-app-laptop.png",
+        "photo": "project/6.png",
         "demo": ["https://nextjs-movies-xi.vercel.app/"],
         "stack": ["Next JS", "Tailwind CSS"]
     },
@@ -51,7 +51,7 @@
         "id": 7,
         "title": "Attendance System",
         "desc": "aplikasi untuk melakukan permohonan cuti, lembur dan izin dari karyawan ke HRD. ketika karyawan meminta cuti. HRD akan mendapatkan notifikasi sesuai permintaan dari karyawan",
-        "photo": "https://i.ibb.co/Cnb652b/Screenshot-from-2021-11-09-10-26-38.png",
+        "photo": "project/7.png",
         "demo": ["https://attendance.nurdindev.com"],
         "stack": ["Laravel", "Bootstrap 4"]
     }
